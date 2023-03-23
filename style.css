@@ -1,0 +1,185 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #111;
+  color: #fff;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222;
+  z-index: 9999;
+}
+
+header h1 {
+  float: left;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header nav {
+  float:
+right;
+}
+
+header nav ul {
+list-style: none;
+}
+
+header nav ul li {
+display: inline-block;
+margin: 0 10px;
+}
+
+header nav ul li a {
+display: block;
+padding: 10px;
+color: #fff;
+text-decoration: none;
+transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+background-color: #333;
+}
+
+main {
+padding-top: 100px;
+}
+
+section h2 {
+font-size: 28px;
+font-weight: bold;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+section ul {
+list-style: none;
+}
+
+section ul li {
+margin-bottom: 10px;
+}
+
+section p {
+margin-bottom: 20px;
+}
+
+section#hero {
+height: 500px;
+background-image: url('../img/hero.jpg');
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+section#hero h2 {
+font-size: 60px;
+font-weight: bold;
+text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+section#hero p {
+font-size: 24px;
+text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+section#contact form label {
+display: block;
+margin-bottom: 10px;
+}
+
+section#contact form input,
+section#contact form textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border: none;
+border-radius: 5px;
+background-color: #333;
+color: #fff;
+}
+
+section#contact form button[type="submit"] {
+background-color: #fff;
+color: #111;
+padding: 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+section#contact form button[type="submit"]:hover {
+background-color: #111;
+color: #fff;
+}
+
+/* Dark Theme Styles */
+body.dark {
+background-color: #111;
+color: #fff;
+}
+
+header.dark {
+background-color: #222;
+}
+
+header.dark nav ul li a {
+color: #fff;
+}
+
+header.dark nav ul li a:hover {
+background-color: #333;
+}
+
+section.dark {
+background-color: #222;
+color: #fff;
+}
+
+section.dark#hero h2,
+section.dark#hero p {
+text-shadow: none;
+}
+
+section.dark ul li {
+border-bottom: 1px solid #444;
+}
+
+section.dark ul li:last-of-type {
+border-bottom: none;
+}
+
+section.dark#contact form input,
+section.dark#contact form textarea {
+background-color: #333;
+color: #fff;
+}
+
+section.dark#contact form button[type="submit"] {
+background-color: #fff;
+color: #111;
+}

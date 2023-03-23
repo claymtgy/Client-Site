@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Titan Coatings</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Titan Coatings</h1>
+        <nav>
+          <ul>
+            <li><a href="#services">Services</a></li>
+	    <li><a href="#why">Why Us?</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="container">
+          <h2>Welcome to Titan Coatings!</h2>
+          <p>Epoxy sealing. Done right.</p>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="container">
+          <h2>Our Services</h2>
+          <ul>
+	    <li>Garage Floor Sealing</li>
+	    <li>Driveway Sealing</li>
+	    <li>General Concrete Sealing</li>
+          </ul>
+        </div>
+      </section>
+      
+      <section id="why">
+	<div class="container">
+	  <h2>Why Us?</h2>
+	  <p>You want the best. We get it. We are a small business focused on making the absolute best impression we can on you. We promise to offer world-class epoxy coatings. When you call us, we will work to understand exactly what you want, how you want it, and when you want it.</p>
+	  <p>Don't settle for anything less than exactly what you want for your flooring or driveway. Get the strongest, cleanest, longest-lasting epoxy coatings when you <a href="tel:+15875770347">call Titan Coatings in Calgary, AB at (587) 57709347.</a>
+
+      <section id="about">
+        <div class="container">
+          <h2>About Titan Coatings</h2>
+	  <p>We have been in the garage sealing business for years. Our owner, <a href="meet_the_staff.html">Tylor Wood"</a>, is a small-town boy, and runs Titan Coatings on the principles of hard work, honesty, and integrity. When you <a href="tel:+15875770347">call</a> Titan Roofing, you can trust that you will get the absolute gold standard in customer service, timeliness, and quality work.</p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <form action="{% url 'contact' %}" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Copyright &copy; 2023 BuildCo</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
